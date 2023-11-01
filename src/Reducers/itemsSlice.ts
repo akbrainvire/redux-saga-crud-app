@@ -17,7 +17,7 @@ const itemsSlice = createSlice({
       // console.log("Add Item", payload);
     },
     addItemSuccess: (state: any, action: any) => {
-      // console.log(action.payload.data);
+      console.log(action.payload);
 
       state.items.push(action.payload.data);
     },

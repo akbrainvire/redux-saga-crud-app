@@ -12,9 +12,9 @@ const UserTable = ({ users, onEdit, onDelete }: any) => {
         </tr>
       </thead>
       <tbody>
-        {users.map((user: any, id: number) => (
+        {users.map((user: any, index: number) => (
           <tr key={user.id}>
-            <td>{id + 1}</td>
+            <td>{index + 1}</td>
             <td>{user.name}</td>
             <td>
               <button

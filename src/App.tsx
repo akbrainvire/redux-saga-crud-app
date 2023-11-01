@@ -47,6 +47,10 @@ function App() {
   };
   const handleSubmit = () => {
     if (iChange.name !== "") dispatch(addItemData(iChange));
+    setIChange({
+      name: "",
+      email: "",
+    });
   };
 
   const handleRemove = (id: any) => {
@@ -76,6 +80,10 @@ function App() {
       };
     });
     dispatch(editItemData(iChange));
+    setIChange({
+      name: "",
+      email: "",
+    });
   };
 
   const handleCancel = () => {
